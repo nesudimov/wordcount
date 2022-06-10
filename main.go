@@ -8,6 +8,10 @@ import (
 
 func main() {
 	str := os.Args[1]
-	words := strings.Split(str, " ")
-	fmt.Printf("%d", len(words))
+	if str == "" {
+		fmt.Printf("%d", 0)
+	} else {
+		words := strings.Split(str, " ")
+		fmt.Printf("%d", len(words))
+	}
 }
